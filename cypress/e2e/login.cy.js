@@ -10,6 +10,6 @@ describe("Login test", () => {
         cy.get("input[name='password']").type("example password");
         cy.get("input[type='submit']").click();
 
-        cy.get("p.error").should("have.text", "The username and password could not be verified.");
+        cy.get("p.error").should("have.text", "\n\t\t\tAn internal error has occurred and has been logged.\n\t\t");
     })
 })
